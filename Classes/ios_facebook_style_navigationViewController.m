@@ -97,5 +97,13 @@
     [UIView commitAnimations];
 }
 
+- (IBAction)navMenuItemTapped:(id) sender {
+    if (![sender isKindOfClass:[UIButton class]])
+            return;
+    
+    NSString *title = [(UIButton *)sender currentTitle];
+    NSLog(@"Menu item clicked with title %@", title);
+}
+
 
 @end

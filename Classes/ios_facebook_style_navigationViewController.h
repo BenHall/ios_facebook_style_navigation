@@ -17,6 +17,7 @@
 @property(nonatomic, retain) UIView *mainView;
 
 -(IBAction)menuTapped;
+-(IBAction)navMenuItemTapped:(id) sender;
 
 @end
 

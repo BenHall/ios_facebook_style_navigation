@@ -24,6 +24,10 @@
 
 	// Set the view controller as the window's root view controller and display.
     self.window.rootViewController = self.viewController;
+	
+	CGRect  rect = [[UIScreen mainScreen] bounds];
+    [window setFrame:rect];
+	
     [self.window makeKeyAndVisible];
 
     return YES;
